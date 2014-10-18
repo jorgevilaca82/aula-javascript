@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+
+        Informe um número:
+        <input type="text" id="num1">
+        <br>
+        Informe outro número:
+        <input type="text" id="num2">
+        
+        <br>
+        <button onclick="somar();">Somar</button>
+
+        
+        <script type="text/javascript">
+
+            function somarPrompt() {
+                var x = window.prompt("Informe o primeiro número.");
+                var y = window.prompt("Informe o segundo número.");
+                var resultado = parseInt(x) + parseInt(y);
+                window.alert(resultado);
+            }
+
+            function somar() {
+                var x = document.getElementById("num1").value;
+                var y = document.getElementById("num2").value;
+                var resultado = parseInt(x) + parseInt(y);
+                window.alert(resultado);
+            }
+            // descomente a linha abaixo para verificar o funcionamento da função somarPrompt
+            //somarPrompt();
+        </script>
+    </body>
+</html>
